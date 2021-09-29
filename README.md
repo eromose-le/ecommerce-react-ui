@@ -10,6 +10,15 @@
 
 `GIT COMMANDS`
 
+# REACT SNIPPETS SHORT CUTS
+
+<!-- extenstion ES7 React/Redux/GraphQL  -->
+
+- raf
+- rafce
+
+`GIT COMMANDS`
+
 # LIST
 
 git show-branch
@@ -25,7 +34,27 @@ git branch -a | grep ‘remotes’
 git branch <branch-name> // local branch
 git push origin <branch-name> // remote branch
 
+<!-- create from <develop branch> -->
+
+git checkout -b myFeature develop
+git commit -am "Your message"
+
+<!-- merge changes to develop branch -->
+
+git checkout develop
+git merge --no-ff myFeature
+
+<!-- push changes to the server -->
+
+git push origin develop
+git push origin myFeature
+
 # UPDATE
+
+<!-- sync from remote origin to local branch -->
+
+git fetch 'https://github.com/eromose-le/ecommerce-react-ui.git' develop
+git push 'https://github.com/eromose-le/ecommerce-react-ui.git' develop -f
 
 git push origin master --force
 git push origin --all
@@ -70,3 +99,13 @@ git commit –amend -m “Add file 3 – Commit 3” // correct commit msg
 # CLONE
 
 git clone --single-branch -b react-mini https://github.com/safak/youtube.git .
+
+# HISTORY
+
+git log // check history of commits
+git checkout <commit-code> // look at the commited code
+
+# NOTE
+
+- Always create a branch from the [local] development branch before working on a new feature
+- Pull changes from [remote] development branch before merging latest commits
