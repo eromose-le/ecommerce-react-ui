@@ -96,6 +96,10 @@ git reset --mixed HEAD~1
 git commit -m “Commit message”
 git commit –amend -m “Add file 3 – Commit 3” // correct commit msg
 
+<!-- commit history -->
+
+git log --graph --pretty=oneline --abbrev-commit
+
 # CLONE
 
 git clone --single-branch -b react-mini https://github.com/safak/youtube.git .
@@ -104,6 +108,14 @@ git clone --single-branch -b react-mini https://github.com/safak/youtube.git .
 
 git log // check history of commits
 git checkout <commit-code> // look at the commited code
+
+# VIEW
+
+gitk // visualize branch tree
+git log --graph // visualize branch tree
+
+git config --global alias.lgb "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches"
+git lgb
 
 # NOTE
 
