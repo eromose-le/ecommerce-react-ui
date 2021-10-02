@@ -8,9 +8,11 @@ import {
   Twitter
 } from '@material-ui/icons';
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: 'column' })}
 `;
 const Left = styled.div`
   flex: 1;
@@ -44,6 +46,7 @@ const SocialIon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: 'none' })}
 `;
 
 const Title = styled.h3`
@@ -66,6 +69,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: '#fff8f8' })}
 `;
 
 const ContactItem = styled.div`
@@ -82,7 +86,7 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>BAZZCODE.</Logo>
+        <Logo>BA.</Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
