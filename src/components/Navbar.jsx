@@ -7,6 +7,7 @@ import { mobile, tablet } from '../responsive';
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: '50px' })}
+  ${tablet({ height: '60px' })}
 `;
 
 const Wrapper = styled.div`
@@ -38,6 +39,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border: none;
   ${mobile({ width: '50px' })}
+  ${tablet({ width: '70px' })}
 `;
 
 const Center = styled.div`
@@ -48,6 +50,7 @@ const Center = styled.div`
 const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: '24px' })}
+  ${tablet({ fontSize: '34px', margin: '0px' })}
 `;
 
 const Right = styled.div`
@@ -62,7 +65,9 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+
   ${mobile({ fontSize: '12px', marginLeft: '10px' })}
+  ${tablet({ fontSize: '14px', marginLeft: '15px' })}
 `;
 
 const Navbar = () => {
