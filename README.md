@@ -83,6 +83,7 @@ git branch -M main // rename current branch
 # REMOTE || PULL
 
 git remote -v // list all remote branches
+git remote show
 git remote add origin “https://github.com/eromose-le/ecommerce-react-ui.git” // add [remote] origin
 https://github.com/safak/youtube.git
 git pull origin master // after adding [remote] origin, oull master branch
