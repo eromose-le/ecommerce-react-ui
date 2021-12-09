@@ -20,4 +20,6 @@ Ensure you internet connection is established to enable photos load
 
 # REPO LINK
 
+> clone "develop" branch
+
 git push https://github.com/eromose-le/ecommerce-react-ui.git
